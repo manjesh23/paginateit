@@ -3,8 +3,6 @@
 """The setup script."""
 
 from setuptools import setup, find_packages
-from os import path
-import sys
 
 with open('README.rst') as readme_file:
     readme = readme_file.read()
@@ -39,7 +37,7 @@ setup(
     include_package_data=True,
     keywords='paginateit',
     name='paginateit',
-    src_dir=path.abspath(path.dirname(__file__)),
+    packages=find_packages(include=['paginateit', 'paginateit.*']),
     setup_requires=setup_requirements,
     test_suite='tests',
     tests_require=test_requirements,
@@ -47,11 +45,3 @@ setup(
     version='0.0.2',
     zip_safe=False,
 )
-
-if sys.argv[1].lower().strip() == 'make':  # exec Makefile commands
-    import pymake
-    fpath = path.join(src_dir, 'Makefile')
-    pymake.main(['-f', fpath] + sys.argv[2:])
-    # Stop to avoid setup.py raising non-standard command error
-    sys.exit(0)
-setup(use_scm_version=True)
