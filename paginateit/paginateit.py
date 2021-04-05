@@ -2,6 +2,8 @@
 
 # Paginateit
 
+# Adding notes in a while
+
 
 def page(count, max_workers=2):
     ndiv = int(count/max_workers)
