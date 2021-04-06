@@ -1,28 +1,26 @@
-#!/usr/bin/env python
-
-"""The setup script."""
+# A setuptools based setup module.
 
 from setuptools import setup, find_packages
+import pathlib
 
-with open('README.rst') as readme_file:
-    readme = readme_file.read()
-
-with open('HISTORY.rst') as history_file:
-    history = history_file.read()
-
-requirements = []
-
-setup_requirements = ['pytest-runner', ]
-
-test_requirements = ['pytest>=3', ]
+here = pathlib.Path(__file__).parent.resolve()
+long_description = (here / 'README.md').read_text(encoding='utf-8')
 
 setup(
-    author="Manjesh N",
+    name='paginateit',
+    version='0.0.2',
+    description='Used to paginate REST API Calls / Mostly on MultiThreaded API Calls via Python',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
+    url='https://github.com/manjesh23/paginateit',
+    author='Manjesh N',
     author_email='manjesh_n@hotmail.com',
-    python_requires='>=3.6',
     classifiers=[
-        'Development Status :: 2 - Pre-Alpha',
+        'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
+        'Intended Audience :: End Users/Desktop',
+        'Intended Audience :: Information Technology',
+        'Intended Audience :: Customer Service',
         'License :: OSI Approved :: Apache Software License',
         'Natural Language :: English',
         'Programming Language :: Python :: 3.6',
@@ -30,18 +28,17 @@ setup(
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
     ],
-    description="Used to paginate REST API Calls / Mostly on MultiThreaded API Calls",
-    install_requires=requirements,
-    license="Apache Software License 2.0",
-    long_description=readme + '\n\n' + history,
-    include_package_data=True,
-    keywords='paginateit',
-    name='paginateit',
-    packages=find_packages(include=['paginateit', 'paginateit.*']),
-    setup_requires=setup_requirements,
-    test_suite='tests',
-    tests_require=test_requirements,
-    url='https://github.com/manjesh23/paginateit',
-    version='0.0.2',
-    zip_safe=False,
+    keywords='API, REST, pagination, offset, skip, limit, recursion',
+    package_dir={'': 'src'},
+    packages=find_packages(where='src'),
+    python_requires='>=3.6',
+    install_requires=[''],
+    extras_require={
+        'dev': [''],
+        'test': [''],
+    },
+    project_urls={
+        'Bug Reports': 'https://github.com/manjesh23/paginateit/issues',
+        'Source': 'https://github.com/manjesh23/paginateit',
+    },
 )
