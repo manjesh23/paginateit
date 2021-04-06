@@ -29,7 +29,7 @@ setup(
         'Programming Language :: Python :: 3.9',
     ],
     keywords='API, REST, pagination, offset, skip, limit, recursion',
-    package_dir={'': 'src\paginateit'},
+    package_dir={'': 'src'},
     packages=["paginateit"],
     python_requires='>=3.6',
     install_requires=[''],
