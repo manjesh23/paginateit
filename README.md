@@ -3,6 +3,8 @@
 
 Used to paginate REST API Calls / Mostly on MultiThreaded API Calls via Python
 
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://gitHub.com/manjesh23/paginateit/graphs/commit-activity)
+
 ## Description
 
 Takes 2 inputs:
