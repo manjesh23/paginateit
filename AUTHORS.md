@@ -1,13 +1,10 @@
-=======
-Credits
-=======
+## Credits
 
-Development Lead
-----------------
+### Development Lead
 
-* Manjesh N <manjesh_n@hotmail.com>
+Manjesh N <manjesh_n@hotmail.com>
 
-Contributors
+### Contributors
+
 ------------
-
 None yet. Why not be the first?
