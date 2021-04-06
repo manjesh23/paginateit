@@ -37,6 +37,8 @@ page(23052, 4)
 |---------------|---------------|---------------|------------|
 |skip5: 23052	|limit5: 28815	|flimit5: 8815	|count5: 5763|
 |---------------|---------------|---------------|------------|
+```
+```
 
 We can now use the variables like skip(x) or limit(x) in the API where filter.
 
