@@ -7,6 +7,6 @@
  * Updated setup,py and converted .rst to .md files (Internal)
  * from paginateit import paginateit --> from paginateit import page
 
-#### 0.0.6 (2021-04-06)
+#### 0.1.1 (2021-04-06)
  * Build and tested
  * updated some doc files.
