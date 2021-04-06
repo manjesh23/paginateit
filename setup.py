@@ -8,7 +8,7 @@ long_description = (here / 'README.md').read_text(encoding='utf-8')
 
 setup(
     name='paginateit',
-    version='0.0.3',
+    version='0.0.4',
     description='Used to paginate REST API Calls / Mostly on MultiThreaded API Calls via Python',
     long_description=long_description,
     long_description_content_type='text/markdown',
