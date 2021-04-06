@@ -22,7 +22,8 @@ pip install paginateit
 
 ### Executing program
 ```
-page(23052, 4)
+from paginateit import paginateit as pg
+pg.page(23052, 4)
 
 ----------------|---------------|---------------|------------|
 |SKIP           | LIMIT         | FLIMIT        | COUNT      |
@@ -49,13 +50,18 @@ COUNT: A count filter tell the maximum number of records available in that page.
 
 Other examples:
 
-page(1700, 8) --> Max records availabe in all pages is 1700 and are creating 8 threads / loops (We see skip[1-9] values)
-page(90005, 6) --> Max records availabe in all pages is 90005 and are creating 6 threads / loops (We see skip[1-7] values)
-page(5025) --> Max records availabe in all pages is 1700 and are creating 8 threads /loops (We see skip[1-3] values)
+pg.page(1700, 8) --> Max records availabe in all pages is 1700 and are creating 8 threads / loops (We see skip[1-9] values)
+pg.page(90005, 6) --> Max records availabe in all pages is 90005 and are creating 6 threads / loops (We see skip[1-7] values)
+pg.page(5025) --> Max records availabe in all pages is 1700 and are creating 8 threads /loops (We see skip[1-3] values)
 
-page(count, max_workers) # max_workers defaults to 2 unless specified
+pg.page(count, max_workers) # max_workers defaults to 2 unless specified
 
 ```
+## Usage
+
+Access the dynamic calculated variables as shown below:
+
+pg.skip1, pg.skip3, pg.limit2, pg.flimit4, pg.count2
 
 ## Help
 
