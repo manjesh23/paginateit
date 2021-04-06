@@ -30,7 +30,7 @@ setup(
     ],
     keywords='API, REST, pagination, offset, skip, limit, recursion',
     package_dir={'': 'src'},
-    packages=["paginateit"],
+    py_modules=["paginateit"],
     python_requires='>=3.6',
     install_requires=[''],
     extras_require={
