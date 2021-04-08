@@ -24,6 +24,9 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install flake8
+        git clone https://github.com/i02sopop/flake8-global-variables
+        cd flake8-global-variables
+        sudo python3 setup.py install
         pip install paginateit
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Lint with flake8
