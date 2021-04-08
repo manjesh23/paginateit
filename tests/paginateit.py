@@ -17,6 +17,7 @@ def page(count, max_workers=2):
 
 def test_page():
     page(23052, 4)
+    dir(page)
     assert limit5 == 28815
     assert skip1 == 0
     assert count4 == 5763
