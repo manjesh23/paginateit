@@ -1,7 +1,7 @@
 
 # paginateit
 
-
+[![Python application](https://github.com/manjesh23/paginateit/actions/workflows/python-app.yml/badge.svg)](https://github.com/manjesh23/paginateit/actions/workflows/python-app.yml)
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://gitHub.com/manjesh23/paginateit/graphs/commit-activity)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/paginateit)
