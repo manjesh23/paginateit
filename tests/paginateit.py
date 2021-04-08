@@ -17,7 +17,7 @@ def page(count, max_workers=2):
 
 def test_page():
     page(23052, 4)
-    assert limit5 == 28815
-    assert skip1 == 0
-    assert count4 == 5763
-    assert flimit3 == '7289'
+    assert page.limit5 == 28815
+    assert page.skip1 == 0
+    assert page.count4 == 5763
+    assert page.flimit3 == '7289'
