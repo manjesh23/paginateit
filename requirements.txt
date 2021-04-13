@@ -1,2 +1,2 @@
 flake8
-pytest-cov
+pytest-cov==2.11.1
